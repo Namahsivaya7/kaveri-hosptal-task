@@ -1,0 +1,365 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fc;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6f00;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  color: #ff6f00;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  /* padding: 15px 30px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.navbar input {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar div span {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Main Dashboard Area */
+.main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Order Summary Styles */
+.order-summary {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.metric {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.metric h3 {
+  font-size: 24px;
+  color: #ff6f00;
+}
+
+.metric p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Analytics Chart Styles */
+.analytics {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.analytics h3 {
+  margin-bottom: 20px;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-bar {
+  text-align: center;
+  width: 12%;
+}
+
+.chart-bar p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.chart-bar div {
+  background-color: #007bff;
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 4px;
+}
+
+.chart-bar div + div {
+  background-color: #ff6f00;
+}
+
+/* Transactions Table */
+.transactions {
+  background-color: #ffffff;
+  margin: 10px 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.Tamount{
+  color: orange;
+}
+.Trow th{
+  color: gray;
+}
+.Tstatus,.Tdate{
+  color: rgba(113, 142, 191, 1);
+
+}
+
+.transactions h3 {
+  margin-bottom: 10px;
+}
+
+.transactions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions th, .transactions td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.transactions th {
+  background-color: #f8f9fc;
+  font-size: 14px;
+}
+
+.transactions td {
+  font-size: 14px;
+}
+
+.transactions tr:hover {
+  background-color: #f1f1f1;
+}
+
+.transactions .amount {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Balance Card */
+.balance-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.balance-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.balance-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .navbar input {
+    width: 200px;
+  }
+
+  .order-summary {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .metric {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .analytics .chart-bar {
+    width: 18%;
+  }
+
+  .transactions th, .transactions td {
+    font-size: 12px;
+  }
+
+  .balance-card p {
+    font-size: 12px;
+  }
+}
+
+
+/* Top Products Styles */
+.top-products {
+  margin: 0;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-products h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.top-products table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.top-products th, .top-products td {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.top-products th {
+  background-color: #f8f9fc;
+}
+
+.top-products .progress-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.top-products .progress {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.top-products tr:nth-child(even) {
+  background-color: #f8f9fc;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  background-color: #f4f5fa;
+}
+
+/* Main content container */
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left Section (Analytics, Top Products, etc.) */
+.left-section {
+  flex: 3; /* Takes 3 parts of the available space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Right Section (Last 10 Transactions) */
+.right-section {
+  flex: 1; /* Takes 1 part of the available space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure tables in the right section are responsive */
+.right-section .last-transactions {
+  flex: 1;
+}
+/* Optional Enhancements for Last Transactions */
+.right-section .last-transactions {
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: auto;
+  width: 100%;
+}
+
+
+.analytics {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 200px;
+}
+
+.chart-bar p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
